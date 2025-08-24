@@ -1,0 +1,58 @@
+_______                    ____________________________________ __
+__  __ \______________________  __/__  __ \__    |_  ____/__  //_/
+_  / / /__  __ \  _ \_  __ \_  /  __  /_/ /_  /| |  /    __  ,<   
+/ /_/ /__  /_/ /  __/  / / /  /   _  _, _/_  ___ / /___  _  /| |  
+\____/ _  .___/\___//_/ /_//_/    /_/ |_| /_/  |_\____/  /_/ |_|  
+       /_/                                                        
+==================================================================
+a__Tracks/FSAE Endurance germany 2012
+File read successfully
+==================================================================
+Name:          FSAE Endurance Germany 2012
+City:          Hockenheim
+Country:       Germany
+Type:          Temporal
+Configuration: Closed
+Direction:     Forward
+Mirror:        off
+Date:          07/08/2025
+Time:          19:49:22
+==================================================================
+Track generation started.
+Pre-processing completed.
+Fine meshing completed with mesh size: 1 [m]
+Apex calculation completed.
+Track rotated.
+Closing fine mesh map.
+Fine mesh map closed.
+Fine mesh map created.
+Plots created and saved.
+Track generated successfully.
+Map:
+      oooooo                                                       
+      o    oo                                                      
+     oo     o                 oooooo                               
+     o     oo                 oo   oooo                            
+    oo   ooo                   oo     ooo                          
+    o   oo       oooooo         ooo     ooo                        
+   oo   o       oo    oo          oo      ooo                      
+   o   oo     oo       ooo         oo       ooo                    
+  oo   o     oo          ooo        oo        ooo                  
+  o    o   ooo             oo        ooo        ooo                
+  o    o  oo                 oo        oo         oo               
+ oo    oooo    oooooooo        oo       oo          oo             
+oo             oo     oooo      ooo      oo          oo            
+o               oooo     ooo      oo      oo          oo           
+o                  ooo     oooo    o       oo          oo          
+ooo                  oo       oooooo        o           ooooo      
+   oooooooo           o                     o               o      
+          o           o                    oo               o      
+          o           o                   oo     oooo       ooo    
+           ooo        ooooooooooooooooooooo   oooo  ooo        ooo 
+              oooooo                         oo       o          o 
+                   ooo                       o         oo        oo
+                     o          ooooooo      oo         oo        o
+                      ooooooooooo      oo      o         oo      oo
+                                        oo     o          ooo    o 
+                                         ooooooo            oo   o 
+                                                             ooooo 
