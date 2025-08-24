@@ -176,81 +176,14 @@ def plot_all(files, x_var='distance', y_var='speed', title=None):
     plt.show()
     
 # Example usage 'Name file': r"path tho CSV"
+#Set this to the paths you want.
 files = {
-    'OP peak': r"D:\VUB\5MAIW\Thesis\Research\Optimal powertrain\Openlap\OpenLAP Sims\OpenLAP_OP peak_FSAE Endurance Germany 2012.csv",
-    'OP continuous': r"D:\VUB\5MAIW\Thesis\Research\Optimal powertrain\Openlap\OpenLAP Sims\OpenLAP_OP Continuous_FSAE Endurance Germany 2012.csv",
-    'Actual setup': r"D:\VUB\5MAIW\Thesis\Research\Actual Setup\Openlap\OpenLAP Sims\OpenLAP_Wdistri 60_FSAE Endurance Germany 2012.csv",
-    
-}
+    'OP peak': r"D:\VUB\OP Peak.csv",
+    'OP continuous': r"D:\VUB\OP continuous.csv",
+    'Actual setup': r"D:\VUB\actual setup.csv",
 
-Best_car = {
-    'Actual setup': r"D:\VUB\5MAIW\Thesis\Research\Actual Setup\Openlap\OpenLAP Sims\OpenLAP_Wdistri 60_FSAE Endurance Germany 2012.csv",
-    #'Best car': r"D:\VUB\5MAIW\Thesis\Research\Best car\Openlap\OpenLAP Sims\OpenLAP_Best car_FSAE Endurance Germany 2012.csv",
-    #'Actual peak setup': r"D:\VUB\5MAIW\Thesis\Research\Optimal powertrain\Openlap\OpenLAP Sims\OpenLAP_OP peak_FSAE Endurance Germany 2012.csv",
-    #'Best car Peak': r"D:\VUB\5MAIW\Thesis\Research\Best car\Openlap\OpenLAP Sims\OpenLAP_Best peak_FSAE Endurance Germany 2012.csv",
     
-    }
-
-Tyre_size_comp = {
-    #'13 inch base': r"D:\VUB\5MAIW\Thesis\Research\Actual Setup\Openlap\OpenLAP Sims\OpenLAP_Wdistri 60_FSAE Endurance Germany 2012.csv",
-    '10 inch base': r"D:\VUB\5MAIW\Thesis\Research\Tire size\Openlap\OpenLAP Sims\OpenLAP_Base 10 inch_FSAE Endurance Germany 2012.csv",
-    #'13 inch ratio': r"D:\VUB\5MAIW\Thesis\Research\Gear ratio\Openlap\OpenLAP Sims\OpenLAP_Ratio 6,9_FSAE Endurance Germany 2012.csv",
-    '10 inch ratio': r"D:\VUB\5MAIW\Thesis\Research\Tire size\Openlap\OpenLAP Sims\OpenLAP_Base 10 inch ratio_FSAE Endurance Germany 2012.csv"  ,
     
-    }
-
+    #Change x_var and y_var to what you want, the title can also be changed
 plot_all(Tyre_size_comp, x_var='distance', y_var='wheel_torque', title='Force at wheel vs Distance')
 
-
-
-def plot_wheel_forces(x_var='distance', y_var='wheel_torque', title=None):
-    plt.figure(figsize=(10, 6))
-    
-    df = csvReader(r"D:\VUB\5MAIW\Thesis\Research\Actual Setup\Openlap\OpenLAP Sims\OpenLAP_Wdistri 60_FSAE Endurance Germany 2012.csv")
-    x = variable(df, x_var)
-    y = variable(df, y_var)/0.265
-    plt.plot(x, y, label = "13 inch Base")
-    print(variable(df, 'wheel_torque').max)
-    
-    df = csvReader( r"D:\VUB\5MAIW\Thesis\Research\Gear ratio\Openlap\OpenLAP Sims\OpenLAP_Ratio 6,9_FSAE Endurance Germany 2012.csv")
-    x = variable(df, x_var)
-    y = variable(df, y_var)/0.203
-    plt.plot(x, y, label = "10 inch base")
-    print(variable(df, 'wheel_torque').max)
-
-    plt.xlabel('Distance [m]')
-    plt.ylabel('tyre force [N]')
-    plt.ylim(bottom=0)
-    plt.title('Force at wheel vs distance')
-    plt.grid(True, linestyle='--', alpha=0.4)
-    plt.legend()
-    #plt.tight_layout()
-    plt.show()
-    
-plot_wheel_forces()
-
-def plot_wheel_forces(x_var='distance', y_var='wheel_torque', title=None):
-    plt.figure(figsize=(10, 6))
-    
-    df = csvReader(r"D:\VUB\5MAIW\Thesis\Research\Gear ratio\Openlap\OpenLAP Sims\OpenLAP_Ratio 6,9_FSAE Endurance Germany 2012.csv")
-    x = variable(df, x_var)
-    y = variable(df, y_var)/0.265
-    plt.plot(x, y, label = "13 inch ratio")
-    print(variable(df, 'wheel_torque').max)
-    
-    df = csvReader(  r"D:\VUB\5MAIW\Thesis\Research\Tire size\Openlap\OpenLAP Sims\OpenLAP_Base 10 inch ratio_FSAE Endurance Germany 2012.csv"   )
-    x = variable(df, x_var)
-    y = variable(df, y_var)/0.203
-    plt.plot(x, y, label = "10 inch ratio")
-    print(variable(df, 'wheel_torque').max)
-
-    plt.xlabel('Distance [m]')
-    plt.ylabel('tyre force [N]')
-    plt.ylim(bottom=0)
-    plt.title('Force at wheel vs distance')
-    plt.grid(True, linestyle='--', alpha=0.4)
-    plt.legend()
-    #plt.tight_layout()
-    plt.show()
-    
-plot_wheel_forces()
