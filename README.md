@@ -20,6 +20,6 @@ Python:
 
 The optimisation route that I took was too optimise a parameter in Optimumlap with for example the "batch" run option. Then use that value in the Openlap software. 
 
-If you are a VUB Racing student you may contact me (Tom Paquet) for more information or my simulated data.
+Feel free to contact me if you are a VUB Racing student for more information or my simulated data.
 
 
