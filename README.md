@@ -1,6 +1,7 @@
 # Lap-time-simulations-
-Data created when doing lap time simulations for the VUB Racing vehicle of 2025. Openlap en Optimumlap are used.
+Method created when doing lap time simulations for the VUB Racing vehicle of 2025. Openlap en Optimumlap are used.
 
+Don't be scared to make push/pull requests, or commit changes. This was whole thing was done to make VUB Racing performant.
 
 For openlap: 
   - in the a__Cars file the 2025 VUBRacing car is set as the file 'car'. This has to be changed following the simulation you want to do
